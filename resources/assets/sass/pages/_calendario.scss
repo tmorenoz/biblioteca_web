@@ -1,0 +1,385 @@
+.actividades{
+  background: #F4F4F4;
+  &--padding{
+    padding: 40px 0px 100px 0px;
+  }
+  &__content{
+    max-height: 655px;
+    overflow-y: scroll;
+    padding:0px 20px;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 11px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background:#F4F4F4;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #007ac9a1;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background:#007ac9cc;
+    }
+    &__cabeza{
+      background: #007AC9;
+      color: $blanco;
+      padding: 25.5px 0px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 19px;
+      font-family: $tahomaBold;
+    }
+    &__item{
+      background: $blanco;
+      padding: 17px 20px;
+      display: block;
+      border-bottom: 1px solid rgba(124, 124, 124, 0.12);
+      transition: all 0.4s;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 95%;
+        background: #007AC9;
+        top: 0;
+        left: 3px;
+        bottom: 0;
+        margin: auto;
+      }
+      &:last-child{
+        border-bottom: 1px solid transparent;
+      }
+      // &:hover{
+      //   text-decoration: none;
+      //   // background: $celeste;
+      //   // span{
+      //   //   color: $blanco;
+      //   // }
+      //   h3{
+      //     color: $celeste;
+      //   }
+      //   p{
+      //     color: $celeste;
+      //   }
+      // }
+      span{
+        font-size: 12px;
+        line-height: 14px;
+        font-family: $tahomaBold;
+        color: $celeste;
+        text-transform: uppercase;
+      }
+      h3{
+        font-size: 14px;
+        color: #007AC9;
+        font-family: $arialBold;
+      }
+      p{
+        font-size: 14px;
+        line-height: 18px;
+        color: $negro;
+        opacity: 0.9;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.calendario{
+  background:rgba(255, 255, 255, 0.58);
+  width: 100%;
+  height: 680px;
+	margin: 3em auto;
+	// padding:2rem 3rem 3rem 3rem;
+  border-radius: 7px;
+  font-family: $tahomaBold;
+}
+
+.futuro{
+  &:before{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $celeste;
+    border-radius: 50%;
+    top: 13px;
+    left: 32px;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $celeste;
+    border-radius: 50%;
+    top: 9px;
+    left: 28px;
+  }
+}
+.pasado{
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $celeste;
+    border-radius: 50%;
+    top: 13px;
+    left: 32px;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $celeste;
+    border-radius: 50%;
+    top: 9px;
+    left: 28px;
+    opacity: 0.4;
+  }
+}
+
+.calendario_cabecera{
+  height: 78px;
+  color: $blanco;
+  padding: 20px 45px;
+  background: $azul;
+  // margin-bottom: 30px;
+}
+.flechas{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.atras {
+  transform: rotate(180deg);
+}
+.atras, .siguiente {
+    color:$blanco;
+    cursor: pointer;
+    font-size: 1.3em;
+    height: 33px;
+    display: inline-block;
+}
+
+.calendar__date{
+  position: relative;
+  color: $negro;
+  // opacity: 0.7;
+  font-size: 14px;
+  line-height: 35px;
+  font-family: $arialBold;
+  height: 92px;
+  width: 14.2%;
+  float: left;
+  padding: 12px 40px;
+  border: 1px solid #0000000d;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
+.anio {
+    padding-bottom: 1rem ;
+    color: $blanco;
+    font-size: 16px;
+    font-family: $tahomaBold;
+    line-height: 35px;
+}
+
+.mes{
+  color:$blanco;
+  margin-bottom: 20px;
+  padding: .5em 1.4em;
+  font-family: $tahomaBold;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+// .semana, .dias {
+//     display: grid;
+//     grid-template-columns: repeat(7, 1fr);
+//     grid-gap: 20px;
+// }
+
+
+.semana, .dias {
+    width: 100%;
+}
+
+.semana{
+  height: 50px;
+  background: #059BDB;
+}
+.calendar__day{
+  font-size: 14px;
+  line-height: 17px;
+  width: 14%;
+  height: 100%;
+  float: left;
+  font-family: $tahomaBold;
+  color: $blanco;
+  padding: 16px 41px;
+}
+
+.dia {
+    // cursor:pointer;
+}
+
+.pintado {
+  width: 20px;
+  height: 32px;
+  color:  #059BDB;
+  border-bottom: 2px solid #059BDB;
+  text-align: center;
+}
+
+.calendar__last-days {
+    opacity: .3;
+    color: $celeste;
+}
+
+.seleccionar{
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  .select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .select{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    width: 102px;
+    height: 38px;
+    text-align: left;
+  }
+  .select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: $tahomaBold;
+    font-size: 13px;
+    background-color: #007ac9;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    @include transition(all 0.2s ease-in);
+    &:after {
+      content:"";
+      width: 6px;
+      background-size: cover;
+      height: 12px;
+      transform: rotate(90deg);
+      background-image: url("../images/icono/flecha.png");
+      position: absolute;
+      top: 13px;
+      right: 18px;
+    }
+    &:hover {
+      background-color: #059BDB;
+    }
+    &:active, &.active {
+      background-color: #059BDB;
+      &:after {
+        top: 13px;
+        transform: rotate(270deg);
+      }
+    }
+  }
+  .select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color:$blanco;
+    li {
+      margin: 0;
+      padding: 12px 0;
+      text-indent: 15px;
+      color:rgba(124, 124, 124, 0.36);
+      font-family: $tahomaNormal;
+      border-top: 1px solid darken( #fff, 5);
+      @include transition(all 0.15s ease-in);
+      &:hover {
+        color:  $celeste;
+      }
+      &[rel="hide"] {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xs){
+   .actividades{
+     &__content{
+       margin-top: 20px;
+     }
+   }
+    .seleccionar{
+      text-align: center;
+      // margin-top: 30px;
+    }
+}
+
+@include media-breakpoint-up(sm){
+  .actividades{
+    &__content{
+      margin-top: 94px;
+    }
+  }
+  .seleccionar{
+    text-align: right;
+    margin-top: 0px;
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .seleccionar{
+    text-align: right;
+  }
+  .actividades{
+    &__content{
+      margin-top: 94px;
+    }
+  }
+}
+
+
+@media (max-width: 768px){
+  .calendario_body {
+      overflow-x: scroll;
+  }
+  .semana, .dias {
+      width: 825px;
+  }
+}
+
+@media(max-width:425px){
+  .calendario{
+    width: 100%;
+  }
+
+}

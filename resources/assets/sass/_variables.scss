@@ -1,0 +1,115 @@
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: #faf9f5;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-pt-sans: 'PT Sans', sans-serif;
+// stylelint-enable value-keyword-case
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded: false;
+
+//
+// Color system
+//
+
+// stylelint-disable
+$color-matterhorn: #41353A;
+$color-brown: #4d362d;
+$color-pink: #d59885;
+$color-pink-2: #d69d92;
+$color-makara: #8b7a6c;
+$color-flint: #6f6e61;
+$color-white: #faf9f5;
+$color-givry: #f9ddd1;
+$color-pampas: #f1f0ea;
+$color-pampas2: #ffffff;
+$color-brandy-rose: #bc8f7c;
+$color-thunder: #33282c;
+$color-bizarre: #ebdad3;
+$color-silver: #bcbcbc;
+$color-silver-2: #bfbfbf;
+$color-oslo-gray: #8d8f91;
+$color-alto: #d8d8d8;
+$color-westar: #e3e2e0;
+$color-donkey-brown: #a38574;
+$color-ebb: #ece8e6;
+$color-lunar-green: #3d4a42;
+$color-lunar-green-2: #344038;
+$color-nandor: #526459;
+$color-ironside-gray: #6f6f63;
+
+$theme-colors: (
+  "danfra": #c79081,
+  "pink": #d69d92,
+  "thunder": #33282c,
+  "fuscous-gray": #504B48,
+  'makara': $color-makara,
+  'rose': $color-brandy-rose,
+  'ebb': $color-ebb
+);
+// stylelint-enable
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-focus-color: transparent;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xl: 1440px
+);
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1356px,
+  xxxl: 1845px
+);
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: (
+  0: ($spacer * 0),
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: ($spacer),
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4.5),
+  7: ($spacer * 7.5),
+  8: ($spacer * 9.5),
+  9: ($spacer * 12),
+  10: ($spacer * 14.5)
+);
+// stylelint-enable

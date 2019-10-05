@@ -1,0 +1,34 @@
+// Body
+$body-bg: #fff;
+$body-font-color: #2b231f;
+
+// Typography
+$font-family-sans-serif: 'Gotham Light', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+//Typography
+
+$tahomaNormal:'tahoma';
+$tahomaBold:'tahomaBold';
+$arialNormal:'ArialNormal';
+$arialBold:'ArialBold';
+
+// Customize
+$naranja: #dca582;
+$celeste: #3DB7E4;
+$azul: #007AC9;
+$negro:#7C7C7C;
+$blanco:#fff;
+
+$theme-colors: (
+  "naranja": $naranja,
+  "celeste": $celeste,
+  "azul": $azul,
+  "negro": $negro,
+  "blanco": $blanco
+);
+
+$border-radius: 0;
+
+$primary-color: #dea47e;

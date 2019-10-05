@@ -1,0 +1,27 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+@font-face {
+    font-family:'ArialBold';
+    src: url('../../fonts/arialBold.eot') format('embedded-opentype'),
+         url('../../fonts/arialBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'ArialNormal';
+   src:  url('../../fonts/arialRegular.eot') format('embedded-opentype'),
+         url('../../fonts/arialRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'tahoma';
+    src: url('../../fonts/tahoma.eot') format('embedded-opentype'),
+         url('../../fonts/tahoma.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family:'tahomaBold';
+    src: url('../../fonts/tahomaBold.eot') format('embedded-opentype'),
+         url('../../fonts/tahomaBold.ttf') format('truetype');
+}

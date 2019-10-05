@@ -1,0 +1,463 @@
+.recursos{
+  background:#F4F4F4;
+  &__card{
+    width: 100%;
+    border:1px solid transparent;
+    margin: auto;
+    height: 225px;
+    margin-bottom: 40px;
+    .descrip{
+      background: $blanco;
+      text-align: center;
+      padding: 20px;
+      h4{
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-size: 17px;
+        font-family: $tahomaBold;
+      }
+    }
+    &__content{
+      height: 100%;
+      width: 100%;
+      position: relative;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+      -ms-transition: all 1s;
+      transition: all 1s;
+      &:hover{
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+      .lado{
+        height: 100%;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+      }
+      .frente{
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+      }
+      .atras{
+        background-image: url("../images/background/bg-nosotros.png");
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 92%;
+          height: 87%;
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        h3{
+          font-size: 28px;
+          line-height: 44px;
+          color: $blanco;
+          font-family: $tahomaBold;
+        }
+        &__parrafo{
+          font-size: 18px;
+          line-height: 30px;
+          text-align: justify;
+          color: $blanco;
+          margin: auto;
+          margin-bottom: 14px;
+          &--chico{
+            width: 65%;
+          }
+          &--grande{
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  &__card__responsive{
+    background: #1C1C1C;
+    height:280px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    &__content{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      height: 100%;
+      h3{
+        font-size: 21px;
+        line-height: 26px;
+        color: $blanco;
+        font-family: $tahomaBold;
+      }
+      &__parrafo{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: justify;
+        color: $blanco;
+        margin: auto;
+        width: 85%;
+        margin-bottom: 14px;
+      }
+    }
+    .background{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      box-shadow: 0px 12px 24px rgba(43, 58, 96, 0.03);
+      height:280px;
+      width: 100%;
+    }
+  }
+}
+
+.novedades{
+  background:#F4F4F4;
+  h2{
+    margin-bottom: 50px;
+  }
+  .owl-novedades{
+    .owl-dots{
+      -webkit-tap-highlight-color: transparent;
+      text-align: center;
+      .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        background: transparent;
+        border: 1px solid transparent;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        margin: 0px 6px;
+        span{
+          width: 10px;
+          height: 10px;
+          background: #7c7c7c70;
+          display: block;
+          -webkit-backface-visibility: visible;
+          transition: opacity .2s ease;
+          border-radius: 30px;
+          margin: 0;
+        }
+        &:hover span{
+          background: $celeste;
+        }
+        &.active{
+          border-radius: 50%;
+          border: 1px solid $celeste;
+          span{
+            background: $celeste;
+          }
+        }
+      }
+    }
+  }
+  &__biblioteca{
+    width: 100%;
+    // min-height: 70px;
+    margin-bottom: 12px;
+    h4{
+      display: inline-block;
+      color: #7C7C7C;
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 5px;
+      font-family: $tahomaNormal;
+      position: relative;
+      top: -13px;
+    }
+    .btn-todos{
+      background: $celeste;
+      color: $blanco;
+      font-family: $tahomaBold;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      font-size: 12px;
+      transition: all .6s;
+      position: relative;
+      display: inline-block;
+      &:hover{
+        border:1px solid $celeste;
+        color: $celeste;
+        background: transparent;
+      }
+    }
+    .biblioteca{
+      position: relative;
+      display: inline-block;
+      .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px;
+      }
+      .select{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        font-size: 13px;
+        width: 102px;
+        height: 38px;
+        text-align: left;
+      }
+      .select-styled {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-family: $tahomaBold;
+        font-size: 13px;
+        background-color:#F4F4F4;
+        color:#7C7C7C;
+        border: 1px solid $celeste;
+        padding: 10px 15px;
+        @include transition(all 0.2s ease-in);
+        &:after {
+          content:"";
+          width: 6px;
+          background-size: cover;
+          height: 12px;
+          transform: rotate(90deg);
+          background-image: url("../images/icono/flecha-celeste.png");
+          position: absolute;
+          top: 13px;
+          right: 18px;
+        }
+        &:hover {
+          background-color:#F4F4F4;
+        }
+        &:active, &.active {
+          background-color:#F4F4F4;
+          &:after {
+            top: 13px;
+            transform: rotate(270deg);
+          }
+        }
+      }
+      .select-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color:$blanco;
+        li {
+          margin: 0;
+          padding: 12px 0;
+          text-indent: 15px;
+          color:#7C7C7C;
+          font-family: $tahomaNormal;
+          border-top: 1px solid darken( #fff, 5);
+          @include transition(all 0.15s ease-in);
+          &:hover {
+            color:  $celeste;
+          }
+          &[rel="hide"] {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__boton{
+    &--margin{
+      margin-top: 50px;
+    }
+  }
+  &__card{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+    &:hover{
+      text-decoration: none;
+    }
+    &:hover &__content{
+      background: $celeste;
+      h3{
+        color: $blanco;
+      }
+      span{
+        color: $blanco;
+      }
+      p{
+        color: $blanco;
+      }
+    }
+    &__content{
+      background: $blanco;
+      transition: all 0.3s;
+      padding: 20px 30px;
+      min-height: 119px;
+      h3{
+        font-size: 16px;
+        line-height: 24px;
+        color: $negro;
+        font-family: $arialBold;
+      }
+      span{
+        font-size: 12px;
+        line-height: normal;
+        font-family: $tahomaNormal;
+        font-weight: bold;
+        color: $celeste;
+        text-transform: uppercase;
+      }
+      p{
+        color: #7C7C7C;
+        font-size: 14px;
+        line-height: 149.49%;
+        font-family: $arialNormal;
+      }
+    }
+    &__img{
+        text-align: center;
+    }
+  }
+}
+
+.parallaxHome{
+  width: 100%;
+  background-image: url("../images/background/bg-parallaxHome.jpg");
+  background-attachment: fixed;
+}
+
+
+@include media-breakpoint-up(xs) {
+  .parallaxHome{
+    height: 279px;
+    background-position: 28%;
+    background-size: cover;
+  }
+  .novedades{
+    &__boton{
+      text-align: center;
+    }
+  }
+  // &__card{
+  //   padding: 63px 40px;
+  //   margin-top: 30px;
+  //
+  //   &:hover &__content{
+  //     h3{
+  //       color: $blanco;
+  //     }
+  //   }
+  //   &__img{
+  //     padding-bottom: 30px;
+  //     img{
+  //       box-shadow: 0px 20px 50px rgba(0, 86, 164, 0.25);
+  //       border-radius: 8px;
+  //     }
+  //   }
+  //   &__content{
+  //     text-align: center;
+  //     h3{
+  //       text-transform: uppercase;
+  //       margin-bottom: 0;
+  //       font-size: 17px;
+  //     }
+  //   }
+  // }
+}
+@include media-breakpoint-up(sm) {
+  .parallaxHome{
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+  }
+  .novedades{
+    &__boton{
+      text-align: right;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .parallaxHome{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+  }
+  .novedades{
+    &__biblioteca{
+      .btn-todos{
+        top: -1px;
+        left: 19px;
+      }
+    }
+    &__boton{
+      text-align: right;
+    }
+  }
+}
+
+@media(max-width:767px){
+  .novedades__boton{
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .recursos{
+    &__card{
+      width: 80%;
+      margin-bottom: 90px;
+    }
+  }
+}
+
+@media(min-width:1300px) and (max-width:1400px){
+    .novedades__biblioteca h4{
+      font-size: 14px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+  .titulo--mediano--biblioteca{
+      font-size: 23px !important;
+  }
+  .recursos{
+    &__card{
+      .descrip{
+        h4{
+          font-size: 13px
+        }
+      }
+      &__content{
+        .atras{
+          &__parrafo{
+            font-size: 13px ;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
