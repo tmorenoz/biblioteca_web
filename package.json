@@ -16,7 +16,7 @@
     "axios": "^0.18.0",
     "block-ui": "^2.70.1",
     "bootstrap": "^4.1.1",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.27.10",
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^5.2.0",
     "gsap": "^2.0.1",
